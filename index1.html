@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>My Digital Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        p, li {
+            font-size: 16px;
+            color: #333;
+        }
+
+        ul, ol {
+            background-color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        img{
+            display:block;
+            margin:20px auto;
+            border-square:50%;
+            border:5px solid #ff69b4
+            transition:transform 1s;
+            width:200px;
+            max-width:100%;
+            transition:transform 1s ease;
+        }
+
+        img:hover{
+            transform:rotate(360deg);
+        }
+
+        ul{
+            list-style-type:square;
+        }
+
+        li{
+            padding:5px 0;
+        }
+
+        footer{
+            text-align:center;
+            background:#ff69b4;
+            color:white;
+            padding:15px;
+            margin-top:20px;
+        }
+        @keyframes fadeIn{
+            form{
+                opcity:0;
+                transform:translatey(30px);
+            }
+        }
+        @media screen and(max-width:300px){
+            body{
+                backgound-color:#ff69b4;
+            }
+            {
+                margin:10px;
+            }
+            h1{
+                font-size:24;
+            }
+            h2{
+                font-size:20px;
+            }
+            img{
+                width:150px;
+                height:150px;
+            }
+            table{
+                font-size:14px;
+            }
+            p,li{
+                font-size:14px;
+            }
+            img{
+                width:100px;
+                max-width:180px;
+                height:auto;
+            }
+            @media screen and(max-width:600px){
+                h1{
+                    font-size:30px;
+                }
+                img{
+                    max-width:140px;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <h1>About Me</h1>
+    <h2 style="background-color: aqua;">Kanisha p</h2>
+    <p>Hello! My name is Kanisha. I am a student interested in web development and digital marketing.</p>
+
+    <h2 style="background-color: aqua;">My image</h2>
+    <img src="img.jpeg" alt="My image"width="300"
+
+    <h2>Education</h2>
+    <ul>
+        <li>bachelor of computer application</li>
+        <li>Web Development Training</li>
+    </ul>
+
+    <h2 style="background-color: aqua;">Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>Communication</li>
+        <li>C</li>
+    </ul>
+
+    <h2 style="background-color: aqua;">Projects</h2>
+    <ol>
+        <li>E-Commerce Cart System</li>
+        <li>Multi-Step Form</li>
+        <li>Task Manager Website</li>
+        <li>MongoDB</li>
+        <li>Digital Resume Builder</li>
+        <li>Result Management System</li>
+    </ol>
+
+    <h2 style="background-color: aqua;">Contact information</h2>
+         <p>Name    :     Kanisha</p>
+         <p>Email   :    kanisha@example.com</p>
+         <p>Phone   :    9876543210</p>
+         <p>Address :  Tirupattur Tamil Nadu,India</p>
+         <p>LinkedIn: linkedin.com/in/kanisha</p>
+         <p>GitHub  :   github.com/kanisha</p>
+
+   <form action="#" method="post">
+
+`
+<label for="name"><b>Name:</b></label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="email"><b>Email ID:</b></label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="phone"><b>Phone Number:</b></label><br>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+<small>Enter a 10-digit phone number</small><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+```
+</form>
+
+    <h2 style="background-color: aqua;">Audio Example</h2>
+    <audio controls>
+        <source src="audio...mp3" type="audio/image">
+    </audio>
+    <h2 style="background-color: aqua;">Video Example</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <h2 style="background-color: aqua;">My Iframe Example</h2>
+    <iframe src="https://www.wikipedia.org"
+    width="600"
+    heigth="600"
+    style="border:2px solid block;">
+</iframe>
+</center>
+</body>
+</html>
