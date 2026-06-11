@@ -48,7 +48,7 @@
             display:block;
             margin:20px auto;
             border-square:50%;
-            border:5px solid #ff69b4
+            border:5px solid #010d13;
             transition:transform 1s;
             width:200px;
             max-width:100%;
@@ -117,6 +117,14 @@
                 }
             }
         }
+    button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
     </style>
 </head>
 <body>
@@ -159,14 +167,13 @@
 
     <h2 style="background-color: aqua;">Contact information</h2>
          <p>Name    :     Kanisha</p>
-         <p>Email   :    kanisha@example.com</p>
-         <p>Phone   :    9876543210</p>
+         <p>Email   :    kanikanisha232@gmail.com</p>
+         <p>Phone   :    9655622502</p>
          <p>Address :  Tirupattur Tamil Nadu,India</p>
-         <p>LinkedIn: linkedin.com/in/kanisha</p>
-         <p>GitHub  :   github.com/kanisha</p>
+         <p>LinkedIn:  https://www.linkedin.com</p>
+         <p>GitHub  :  github.com/kanisha</p>
 
-   <form action="#" method="post">
-
+<form action="#" method="post">
 `
 <label for="name"><b>Name:</b></label><br>
 <input type="text" id="name" name="name" required><br><br>
@@ -182,10 +189,47 @@
 <input type="reset" value="Clear">
 ```
 </form>
+<div class="container">
+    <h2 style="background-color: aqua;">To-Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script>
+function addTask() {
+    let input = document.getElementById("taskInput");
+    let task = input.value;
+
+    if (task === "") {
+        alert("Please enter a task!");
+        return;
+    }
+
+    let li = document.createElement("li");
+
+    li.innerHTML = `
+        ${task}
+        <button class="delete-btn" onclick="deleteTask(this)">
+            Delete
+        </button>
+    `;
+
+    document.getElementById("taskList").appendChild(li);
+
+    input.value = "";
+}
+
+function deleteTask(button) {
+    button.parentElement.remove();
+}
+</script>
 
     <h2 style="background-color: aqua;">Audio Example</h2>
     <audio controls>
-        <source src="audio...mp3" type="audio/image">
+        <source src="audio...mp3"type="audio/mpeg">
     </audio>
     <h2 style="background-color: aqua;">Video Example</h2>
     <video width="400" controls>
@@ -193,7 +237,7 @@
     </video>
 
     <h2 style="background-color: aqua;">My Iframe Example</h2>
-    <iframe src="https://www.wikipedia.org"
+    <iframe src="https://www.openstreetmap.org/export/embed.html"
     width="600"
     heigth="600"
     style="border:2px solid block;">
